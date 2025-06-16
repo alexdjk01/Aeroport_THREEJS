@@ -2,8 +2,8 @@ PROIECT REALIZAT DE IONEL MIHAI ALEXANDRU.
 Proiect GRAFICA, profesor coordonator VINTE CLAUDIU
 
 ==========================================================================
-===  TOT PROIECTUL ESTE DISPONIBIL PE GIHTUB: 
-===  TOT PROIECTUL ESTE DISPONIBIL SI PE GOOGLE DRIVE: 
+===  TOT PROIECTUL ESTE DISPONIBIL PE GIHTUB: https://github.com/alexdjk01/Aeroport_THREEJS
+===  TOT PROIECTUL ESTE DISPONIBIL SI PE GOOGLE DRIVE: https://drive.google.com/file/d/1Gz8zczBxES34KOMyBOBR-qgxlxCFLb2F/view?usp=sharing
 ==========================================================================
 
 Proiectul se axeaza pe contruirea unei planse 3D cu ajutorul librarii three.js
