@@ -1,0 +1,6 @@
+Step 1:
+- am importat utilitatile, texturi, librarii
+- am definit canvasul ca 700x700
+- am definit o pista de decolare/aterizare
+- lumina generala
+- pozitia camerei

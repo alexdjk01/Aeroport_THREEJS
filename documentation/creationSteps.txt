@@ -1,0 +1,64 @@
+PROIECT REALIZAT DE IONEL MIHAI ALEXANDRU.
+Proiect GRAFICA, profesor coordonator VINTE CLAUDIU
+
+==========================================================================
+===  TOT PROIECTUL ESTE DISPONIBIL PE GIHTUB: 
+===  TOT PROIECTUL ESTE DISPONIBIL SI PE GOOGLE DRIVE: 
+==========================================================================
+
+Proiectul se axeaza pe contruirea unei planse 3D cu ajutorul librarii three.js
+Tema principala : Aeroport
+
+STRUCTURA PROIECT:
+	-index.html !!! TREBUIE DAT RUN LA INDEX.HTML CU LIVE SERVER DIN VISUAL STUDIO
+	-main.js -> include logica si elemente vizuale
+	-style.css -> design simplu, general
+	-documentation -> contine documentatia proiectului
+	-assets:
+		/models -> modele GLB adaugate in canvas. Sursa: https://poly.pizza/
+		/textures -> texturi realiste pentru a crea o plansa reala. Sursa: https://ambientcg.com/
+		/sounds -> sunet de plaoie si fulgere pentru o atmosfera reala.
+
+
+
+PASI DE CREARE PROIECT:
+
+PAS 1 - Setari proiect:
+- Creat proiect local cu fisiere: index.html, main.js, style.css, assets/
+
+PAS 2 - Scena de baza
+- Initializat scena (THREE.Scene)
+- Adaugat PerspectiveCamera, WebGLRenderer, OrbitControls
+- Fundal: culoare cer
+- Teren general: PlaneGeometry(700, 700) cu textura de iarba 
+
+PAS 3 - TEXTURI
+- Aplicat textura de iarba / sosea folosind TextureLoader
+- Aplicat texturi PBR: color, normal, roughness
+
+PAS 4 - PISTA DECOLARE
+- Geometrie: PlaneGeometry
+- Textura asfalt (Road006), cu normalMap si roughnessMap
+- Repeat pe lungime: repeat.set(1, 10)
+
+PAS 5 - MODELE EXTERNE
+- Incarcat .glb cu GLTFLoader
+- Varietate de modele si logica de implementare
+
+PAS 6 - MODELE PROPRII
+- Turn de control propriu
+- Avion propriu care zboara
+- Tank care poat fi controlat cu WASD si rotit cu QE
+- Animatii pentru unele modele create propriu
+
+PAS 7 -  VREME DINAMICA SI GUI
+- Mod ploaie cu randare de picuri, sunet de plaoie si fulgere (lumini tip flash plus zgomot)
+- Gui schimbare mod plaoe / mod normal
+- Slider pentru viteza si altitudine avion propriu
+
+PAS 8 - Features viitoare
+* Voi putea implementa o camera din avion pentru a vedea plansa din alt punct
+* Alte tipuri de VREME
+* Aplicatia se poata scala usor
+
+
