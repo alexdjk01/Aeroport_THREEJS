@@ -380,7 +380,10 @@ loader.load(
       { x: 150, y: 0.8, z: 90 },{ x: 145, y: 0.8, z: 130 },{ x: 151, y: 0.8, z: 170 },
       { x: -30, y: 0.8, z: -70 },{ x: -34, y: 0.8, z: -30 },{ x: -32, y: 0.8, z: 10 },{ x: -27, y: 0.8, z: 50 },
       { x: -30, y: 0.8, z: 90 },{ x: -25, y: 0.8, z: 130 },{ x: -31, y: 0.8, z: -170 },{ x: -25, y: 0.8, z: -210 },
-      { x: -31, y: 0.8, z: -250 },
+      { x: -31, y: 0.8, z: -250 },{ x: -180, y: 0.8, z: 210  },{ x: -140, y: 0.8, z: 210  },{ x: -140, y: 0.8, z: 220  },
+      { x: -140, y: 0.8, z: 240  },{ x: -140, y: 0.8, z: 260  },{ x: -140, y: 0.8, z: 280  },{ x: -140, y: 0.8, z: 300  },
+      { x: -140, y: 0.8, z: 320  },{ x: -140, y: 0.8, z: 340  },{ x: -110, y: 0.8, z: 220  },{ x: -110, y: 0.8, z: 240  },
+      { x: -110, y: 0.8, z: 260  },{ x: -110, y: 0.8, z: 280  },{ x: -110, y: 0.8, z: 300  },{ x: -110, y: 0.8, z: 320  },
     ];
       pozitiiCopaci.forEach((pos) => {
       const copac = modelOriginal.clone(true); // true
@@ -411,7 +414,13 @@ loader.load(
       { x: 130, y: 6, z: -80 },{ x: 134, y: 6, z: -40 },{ x: 132, y: 6, z: 30 },{ x: 127, y: 6, z: 70 },
       { x: 130, y: 6, z: 110 },{ x: 125, y: 6, z: 150 },{ x: 131, y: 6, z: 190 },
       { x: 150, y: 6, z: -80 },{ x: 154, y: 6, z: -40 },{ x: 152, y: 6, z: 30 },{ x: 147, y: 6, z: 70 },
-      { x: 150, y: 6, z: 110 },{ x: 145, y: 6, z: 150 },{ x: 151, y: 6, z: 190 },
+      { x: 150, y: 6, z: 110 },{ x: 145, y: 6, z: 150 },{ x: 151, y: 6, z: 190 },{ x: -200, y: 6, z: 210  },
+      { x: -180, y: 6, z: 190  },{ x: -200, y: 6, z: 180  },{ x: -70, y: 6, z: 210  },{ x: -70, y: 6, z: 180  },
+      ,{ x: -50, y: 6, z: 190  },
+      { x: -140, y: 6, z: 230  },
+      { x: -140, y: 6, z: 250  },{ x: -140, y: 6, z: 270  },{ x: -140, y: 6, z: 290  },{ x: -140, y: 6, z: 310  },
+      { x: -140, y: 6, z: 330  },{ x: -140, y: 6, z: 350  },{ x: -110, y: 6, z: 230  },{ x: -110, y: 6, z: 250  },
+      { x: -110, y: 6, z: 270  },{ x: -110, y: 6, z: 290  },{ x: -110, y: 6, z: 310  },{ x: -110, y: 6, z: 330  },
     ];
       pozitiiCopaci.forEach((pos) => {
       const copac = modelOriginal.clone(true); 
@@ -456,6 +465,21 @@ loader.load(
     const tractor = gltf.scene;
     tractor.position.set(180, 0.8,181.5); 
     tractor.rotation.y = Math.PI; 
+    tractor.scale.set(0.6, 0.6, 0.6); 
+    scene.add(tractor);
+  },
+  undefined,
+  function (error) {
+    console.error('Eroare la încarcarea modelului:', error);
+  }
+);
+
+loader.load(
+  './assets/models/Tractor.glb',
+  function (gltf) {
+    const tractor = gltf.scene;
+    tractor.position.set(220, 1.5,100); 
+    tractor.rotation.y = Math.PI*2; 
     tractor.scale.set(0.6, 0.6, 0.6); 
     scene.add(tractor);
   },
